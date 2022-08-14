@@ -1,2 +1,0 @@
-# kata
-kata daily
