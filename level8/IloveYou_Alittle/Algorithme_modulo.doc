@@ -1,0 +1,21 @@
+Algorithme permettant de résoudre cette excercice
+
+Intêret pédagogique de cet excercice:
+Déclarer un tableau de type char
+Découvrir et manipuler leprinciê de modulo et défiinr la relationde congruence.
+Formule Modulo:
+
+a mod n = a - [a] x n
+	       -
+	       b
+
+L'opérateur mod retourne alors un modulo toujours compris entre 0 (inclus) et le diviseur n (exclu) et qui a le même signe que le diviseur n.
+
+Içi ce qui est proposé est d'utiliser le modulo de a par le diviseur 6 (nombre de phrases possibles).
+Un modulus est donc une « soustraction en cascade »; en français, on pourrait dire « Enlève le nombre A à mon nombre tant que celui-ci est supérieur au nombre A », A étant un nombre quelconque, celui choisi comme modulus.
+
+
+
+Relation de Congruence:
+
+Le modulus permet de définir une relation entre deux nombres, appelée relation de congruence. 
