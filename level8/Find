@@ -1,0 +1,51 @@
+#include <unistd.h>
+
+
+*/
+Le PPCM est donné par le rapport du produit des 2 entiers donnés et de leur PGCD. On obtient la formule suivante PPCM (a,b) = a × b ÷ PGCD (a,b).
+Le PGCD est le plus grand commun diviseur de 2 entiers.
+Le PGCD se calcule par divisions successives (méthode d'Euclide) 
+Méthode d'Euclide
+La recherche du PGCD par la méthode des divisions euclidiennes est la conséquence du lemme d'Euclide.
+ 
+Lemme d'Euclide : soit un couple d'entiers naturels non nuls (a,b), si des entiers naturels q et r, avec r ≠ 0, sont tels que a = bq + r , alors : PGCD(a,b) = PGCD(b,r).
+
+Enoncé:
+
+In this simple exercise, you will build a program that takes a value, integer , and returns a list of its multiples up to another value, limit . If limit is a multiple of integer, it should be included as well. There will only ever be positive integers passed into the function, not consisting of 0. The limit will always be higher than the base.
+
+For example, if the parameters passed are (2, 6), the function should return [2, 4, 6] as 2, 4, and 6 are the multiples of 2 up to 6.
+
+If you can, try writing it in only one line of code.
+
+
+Algorithme de résolution de 
+input()
+
+traitement 
+
+Output()
+Liste de tout les entiers diviseurs. Borner par la limite inclue.
+la limite est toujours plus grande que le premier entier.
+
+
+/*
+
+#include <stddef.h>
+
+typedef unsigned int uint;
+
+void find_multiples (uint n, uint limit, size_t *count, uint multiples[])
+{
+// fill the multiples[] array and put the number of elements into count
+int tmp = n;
+  int i = 0;
+  
+  while(tmp <= limit){
+    //printf("== %d \n", tmp);
+    multiples[i++] = tmp;
+    tmp += n;
+  }	
+// fill the multiples[] array and put the number of elements into count
+  *count = i;
+}
